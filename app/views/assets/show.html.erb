@@ -1,0 +1,108 @@
+<div class="tform">
+  <table width=100% >
+	
+<!--Staff Details-->	
+
+  <tr>
+	  <th colspan = 2>Asset Details</th>
+  </tr>
+
+	<tr>
+		<td class="leftcol"><label for="staff_id">Asset Code:</label></td>
+		<td><%=h @asset.assetcode %></td>	
+	</tr>
+	<tr>
+		<td class="leftcol"><label for="staff_id">Asset Type:</label></td>
+		<td><%=h (Asset::ASSETTYPE.find_all{|disp, value| value == @asset.assettype}).map {|disp, value| disp} %></td>	
+	</tr>
+	<tr>
+		<td class="leftcol"><label for="staff_id">Card No:</label></td>
+		<td><%=h @asset.cardno %></td>	
+	</tr>
+	<tr>
+		<td class="leftcol"><label for="staff_id">Dept ID:</label></td>
+		<td><%=h @asset.dept_id %></td>	
+	</tr>
+	<tr>
+		<td class="leftcol"><label for="staff_id">Category:</label></td>
+		<td><%=h @asset.category %></td>	
+	</tr>
+	<tr>
+	<td class="leftcol"><label for="bookable">Bookable:</label></td>
+	    <td><%=h @asset.bookable? ? "This item can be booked" : "No" %></td>
+	</tr>
+  <tr>
+	  <th colspan = 2>Asset Description</th>
+  </tr>
+	<tr>
+		<td class="leftcol"><label for="staff_id">Name:</label></td>
+		<td><%=h @asset.name %></td>	
+	</tr>
+	<tr>
+		<td class="leftcol"><label for="staff_id">Type No:</label></td>
+		<td><%=h @asset.type %></td>	
+	</tr>
+	<tr>
+		<td class="leftcol"><label for="staff_id">Manufacturer:</label></td>
+		<td><%=h @asset.manufacturer_id.blank? ? "Not Recorded" : @asset.manufacturedby.name %></td>	
+	</tr>
+	<tr>
+		<td class="leftcol"><label for="staff_id">Model:</label></td>
+		<td><%=h @asset.model %></td>	
+	</tr>
+	<tr>
+		<td class="leftcol"><label for="staff_id">Serial No:</label></td>
+		<td><%=h @asset.serialno %></td>	
+	</tr>
+	<tr>
+		<td class="leftcol"><label for="staff_id">Located at:</label></td>
+		<td><%=h @asset.location.blank? ? "" : @asset.location.name %></td>	
+	</tr>
+	<tr>
+		<td class="leftcol"><label for="staff_id">Assigned to:</label></td>
+		<td><%=h @asset.assignedto_id.blank? ? "-" : @asset.assignedto.staff_name_with_position %></td>	
+	</tr>
+	<tr>
+		<td class="leftcol"><label for="staff_id">Status:</label></td>
+		<td><%=h @asset.status %></td>	
+	</tr>
+	<tr>
+		<td class="leftcol"><label for="staff_id">Other Information:</label></td>
+		<td><%=h @asset.otherinfo %></td>	
+	</tr>
+	<tr>
+	  <th colspan = 2>Purchasing Info</th>
+  </tr>
+	<tr>
+		<td class="leftcol"><label for="staff_id">Order No:</label></td>
+		<td><%=h @asset.orderno %></td>	
+	</tr>
+	<tr>
+		<td class="leftcol"><label for="staff_id">Price:</label></td>
+		<td><%=h ringgols(@asset.purchaseprice) %></td>	
+	</tr>
+	<tr>
+		<td class="leftcol"><label for="purchasedate">Purchase Date:</label></td>
+		<td><%=h @asset.purchasedate.strftime("%d %B %Y") %></td>
+	</tr>
+	<tr>
+		<td class="leftcol"><label for="purchasedate">Delivery Date:</label></td>
+		<td><%=h @asset.receiveddate.strftime("%d %B %Y") %></td>
+	</tr>
+	<tr>
+		<td class="leftcol"><label for="staff_id">Received By:</label></td>
+		<td><%=h @asset.receivedby.blank? ? "-" : @asset.receivedby.staff_name_with_position %></td>	
+	</tr>
+	<tr>
+		<td class="leftcol"><label for="staff_id">Received By:</label></td>
+		<td><%=h @asset.supplier_id.blank? ? "-" : @asset.suppliedby.name %></td>	
+	</tr>
+
+</table>
+<BR>
+</div>
+
+
+
+<%= link_to 'Edit', edit_asset_path(@asset) %> |
+<%= link_to 'Back', assets_path %>

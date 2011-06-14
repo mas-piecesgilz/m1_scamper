@@ -1,0 +1,455 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  #common
+  search:  Search
+  datelabel: Date
+  years_label: years
+  months_label: months
+  action: Action
+  back: Back
+  new: Create
+  update: Update
+  control: Control
+  thank: "Staff was successfully created"
+  update: "Staff was successfully updated"
+  
+  activerecord:
+      models:
+          staff: "Staff"
+          attendance: "Attendance"
+          position: "Position"
+          leaveforstaff: "Leave For Staff"
+          travelrequest: "Travel Request"
+          asset: "Asset"
+          disposal: "Disposal"
+          assetloss: "Asset Loss"
+      attribute:
+          staff:
+              icno: "MyKad No"
+              name: "Name"
+              coemail: "Email"
+              code: "Staff Code"
+              fileno: "File No"
+              position: "Position"
+              bloodtype: "Blood Type"
+              addr: "Address"
+              poskod_id: "Poskod"
+              mrtlstatuscd: "Marital Status"
+              staffgrade_id: "Staff Grade"
+              statecd: "State of Birth"
+              country_cd: "Nationality"
+          position:
+              positioncode: "Position Code"
+          leaveforstaff:
+              staff_id: "Staff Name"
+          travelrequest:
+              staff_id: "Staff Name"
+              trcode: "Travel Code"
+              destination: "Destination"
+              purpose: "Purpose"
+          asset:
+             assettype: "Aset Type"
+             cardno: "Card No"
+             name: "Name"
+             assetcode: "Registration Serial No"
+          disposal:
+             asset_id: "Asset Code"
+             currentvalue: "Current Value"
+          assetloss:
+             reportcode: "Internal Loss Report Code"
+             losstype: "Lost Type"
+             sio_id: "Investigating Officer"
+                 
+      errors:
+          template:
+            body: "There were problems with the following fields:"
+            header:
+              one: "1 errors prohibited this {{model}} from being saved"
+              other: "{{count}} prohibited this {{model}} from being saved"
+          message:
+              blank: "cant't be blank"
+              not_a_number: "is not number"
+              too_short: "is too short (minimum is {{count}} characters)"
+              taken: "has already been taken"
+
+  icms: 
+    login:  Log In
+    logout: Log Out
+    submit: Create
+    back: Back
+    add: Add More
+    
+  staff: 
+    new: New Staff
+    menu: Staff
+    list: Staff List
+    icno: MyKad No
+    name: Name
+    create: Create New Staff
+    position: Position  #move to position when ready
+    
+    personal_details: Personal Details
+    code: Staff Code
+    fileno: Personal File No
+    cobirthdt: Date Of Birth
+    age: Age
+    bloodtype: Blood Type
+    gender: Gender
+    coemail: Email
+    cooftelno: Telephone (Office)
+    phonecell: Telephone (HP)
+    phonehome: Telephone (H)
+    addr: Address
+    poskod_id: Post Code
+    mrtlstatuscd: Marital Status
+    statecd: State of Birth
+    race: Race
+    religion: Religion
+    country_cd: Nationality
+    upload: Upload Photo
+    employment_details: Employment Details
+    employscheme: Employment Scheme
+    staffgrade_id: Staff Grade
+    employstatus: Employment Status
+    appointstatus: Appointment Status
+    appointdt: Appointment Date
+    schemedt: Appointment To Scheme
+    confirmdt: Confirmation Date
+    posconfirmdate: Position Confirmation Date
+    pension_confirm_date: Pension Confirmation Date
+    wealth_decleration_date: Date of Latest Wealth Decleration
+    promotion_date: Last Promotion Date
+    reconfirmation_date: 'Reconfirmation Date (Option)'
+    current_grade_date: Date of Confirmation to Current Grade
+    starting_salary: Starting Salary
+    
+    appointby: Appointed By
+    svchead: Head Of Service
+    svctype: Type Of Service
+    pensionstat: Pension Status
+    pensiondt: Pension Date
+    uniformstat: Uniform Status
+    position_id: Position
+    
+    tqualification: Qualifications
+    level_id: Level
+    qname: Qualification
+    institute: Institute
+    
+    loans: Loans
+    ltype: Loan For
+    accno: Loan Account No
+    startdt: Loan Date
+    durationmn: Duration
+    deductions: Deductions
+    
+    finance: Finance Details
+    kwspcode: EPF No
+    taxcode: Tax No
+    bank: Bank
+    bankaccno: Account No
+    bankacctype: Account Type
+    
+    emencengy: Emergency Contact Information
+    kintype_id: Relationship
+    kinbirthdt: DOB
+    phone: Telephone
+    kinaddr: Address
+    
+  attendance:
+     new: New Attendance
+     list: Lists of Attendances
+     staff_details: Staff Details
+     staff_id: Select Staff
+     attendance_details: Attendance Details
+     attdate: Select Date
+     time_in: Time In
+     time_out: Time Out
+     reason: Reason If Late
+     approve_id: Approving Officer
+     approvestatus: Approving Status
+     create: Create New Attendance
+    # marked: Fields marked with an asterisk <font color="red"> * </font> are required
+    
+  positions:
+     list: List of Positions
+     new: New Positions
+     position: Position
+     positioncode: Position Code
+     positionname: Position Name
+     personname: Person Name
+     parent_id: Subordinate Of
+     grade_id: Minimum Grade Requirement
+     unit: Unit
+     taskmain: Main Tasks
+     taskother: Other Tasks
+     create: Create New Positions
+     
+  staffleave:
+     new: New Leave For Staff
+     list: Lists of Leaves
+     leavereq: Staff Leave Request Details
+     staff_id: Staff Name
+     leavetype: Leave Type
+     leavestartdate: Leave Start Date
+     leavenddate: Leave End Date
+     reason: Reason
+     notes: Notes
+     create: Apply for Leave
+     from_to: From - To
+     duration: Duration
+     
+  travel:
+     new: New Travel Request
+     list: Lists of Travel Requests
+     staff_details: Staff Details
+     sname: Staff Name
+     trcode: Travel Request Code
+     travel_details: Travel Details
+     destination: Destination
+     purpose: Purpose
+     tstartdt: Start Date
+     treturndt: Return Date
+     bplreserve: Transport
+     ifownwhy: Why Used Own Transport
+     claimtype: Claim Type
+     submission: Submission 
+     submissiondate: Submission Date
+     replacement_id: Replacement
+     hod_confrm: HOD Confirmation
+     hod_id: HOD Name
+     hodconfirmdt: Confirmed Date
+     approved: Approved By
+     create: New Travel Request
+   
+  training:
+     new: New Trainning Need
+     list: Lists of Training Needs
+     training_details: Trainning Needs Details
+     evaluation_id: Evaluation
+     name: Name
+     reason: Reason
+     confirmedby_id: Confirmed By
+     create: New Trainneed
+  
+  supplier:
+     list: List of Office Supplies
+     new: New Office Supplies
+     create: Create Office Supplies
+     supplier_details: Office Supplies
+     suplycode: Supplier Code
+     Category: Category
+     unittype: Unit Type
+     maxquantity: Max Quantity
+     minquantity: Min Quantity
+     current: Current Quantity
+     
+     add: Add Supplies
+     lpono: LPO No
+     unitcost: Unit Cost
+     document: Document
+     quantity: Quantity
+     received: Received
+     
+     use: Use/Issue Supplies   
+     issuedby: Issues By
+     receivedby: Received By
+     quantity: Quantity
+     issuedate: Issue Date     
+  
+  disposal:
+      list: Lists of Disposals
+      new: New Disposal
+      create: Create New Disposal
+      disposal_details: Disposals Details 
+      asset_id: Asset Code
+      used: Used
+      usedduration: Duration
+      currentvalue: Current Value
+      opinion: Opinion  
+      recommendation: Recommendation
+      gift: Gift
+      status: Status
+  
+  assetloses:
+      list: Lists of Asset Loss
+      new: Register New Asset Loss
+      create: Create New Asset Loss
+      assetloses_details: Lampiran J
+      reportcode: Internal Loss Report Code
+      losstype: Lost Type
+      asset_id: Asset Name
+      estvalue: Estimate Value
+      losslocation_id: Lost Location
+      lossdt: Loss Date
+      losshow: How did loss happen?
+      lossstafflast_id: Last staff to handle item
+      laststaffcase: Is a staff prima facie responsible for loss?
+      preventpast: What action has been taken previously to prevent this loss
+      laststaffstop: Has staff been suspended?
+      poreport: Has a police report been made i.a.w AP 315. If Yes enter Police Report Ref No Below
+      porepno: Police Report Ref No
+      preventfuture: What actions will be taken to prevent recurrence in future?
+      remarks: Other remarks (if any)
+      hod_id: Name of Head of Department
+      hodendorsedt: Head of Department Endorsement Date
+      
+      lampirank: Lampiran K
+      moneytype: In case of public funds select type
+      newitem: Used or new item?
+      sostop: Is the asset administrator suspended? If Yes state date below
+      sostopdt: Date asset administrator suspended
+      soaction: For asset administrator state offence and punishment
+      supstop: Has asset administrator's supervisor been suspended If yes state date below
+      supstopdt: Date asset administrator's supervisor was suspended
+      supaction: For asset administrator's supervisor state offence and punishment
+      poaction: If police report has been made state action that police has taken
+      ponoreportwhy: If no report to police has been made please state why
+      rulesbroken: Have any rules been broken? if yes state below
+      owneraction: Rules Broken and By Whom
+      
+      newrule: Steps and New rules put in place to prevent losses like this
+      newrule_id: Staff Name to enforce new rules
+      nrrecommend: What the recommended new rules or amendments to existing rules to be put in place
+      surcharge: Recommendations for Surcharge
+      sio_id: Investigating Officer
+      
+  evaluation:
+    form:
+      list: Lists of Appraisals
+      create: Create New Appraisals
+      new: New Appraisals
+      title_part1:  'Part 1: Staff Details (filled by PYD)'
+      name: Staff Name
+      evaluationdate: Evaluation Date
+      title_partIIa: 'Part IIa - Activities'
+      label_001: '1. Activities and contributions outside of official duties'
+      label_002: 'List activities and contributions outside of official duties such as sports, organisations or creative contributions at the community, department, district, state or international level that have benefitted the organisation, community of country for the year of evaluation.'
+      title_part2b: 'Part IIb:  Training'
+      label_003: '(i) List training programmes (seminar, courses, workshops, etc that have ben attended this year.'
+      label_004: '(ii). List Training Needed'
+      parttwodate: Date
+      label_005: Evaluation Criteria
+      title_part3: 'Part III: Work Output'
+      quantity: 1. WORK OUTPUT QUANTITY
+      quantity_desc: 'Work output quantity such as total, count, rate, frequency and others in relation to the target work output quantity as described'
+      quality: 2. QUALITY OF WORK
+      quanlity_desc1: '1. Dinilai dari segi kesempurnaan,teratur dan kemas.'
+      quanlity_desc2: '2. Dinilai dari segi usaha dan inisiatif untuk mencapai kesempurnaan hasil kerja.'
+      ontime: 3. KETEPATAN MASA
+      ontime_desc: 'Kebolehan menghasilkan kerja atau melaksanakan tugas dalam tempoh masa yang ditetapkan.'
+      effective: 4. KEBERKESANAN HASIL KERJA
+      effective_desc: 'Dinilai dari segi memenuhi kehendak stake-holder atau pelanggan.'
+      title_part4: 'Part IV: Kemahiran (20%)'
+      knowledge: 5. ILMU PENGETAHUAN DAN KEMAHIRAN DALAM BIDANG KERJA
+      knowledge_desc: 'Mempunyai ilmu pengetahuan dan kemahiran/kepakaran dalam menghasilkan kerja meliputi kebolehan mengenalpasti, menganalisis serta menyelesaikan masalah.'
+      rules: 6. PELAKSANAAN DASAR PERATURAN DAN ARAHAN PENTADBIRAN
+      rules_desc: 'Kebolehan menghayati dan melaksanakan dasar, peraturan dan arahan pentadbiran berkaitan dengan bidang tugasnya.'
+      communication: 7. Communication
+      communication_desc: 'Kebolehan menyampaikan maksud,pendapat,kefahaman atau arahan secara lisan dan tulisan berkaitan denganbidang tugas merangkumi penguasaan menggunakan tatabahasa dan persembahan yang baik.'
+      title_part5: 'Part V: Personal (20%)'
+      leadership: 8. LEADERSHIP CRITERIA
+      leadership_desc: 'Mempunyai wawasan, komitment, kebolehan, membuat, keputusan, menggerak dan memberi dorongan kepada pegawai ke arah pencapaian objecktif orgnisasi.'
+      management: 9. KEBOLEHAN MENGELOLA
+      management_desc: 'Keupayaan dan kebolehan menggembleng segala sumber dalam kawalannya seperti kewangan, tenaga manusia, peralatan dan maklumat bagi merancang,mengatur,membahagi dan mengendalikan sesuatu tugas untuk mencapai objective organisasi.'
+      discipline: 10. DISCIPLINE
+      discipline_desc: 'Mempunyai daya kawal diri dari segi mental dan fizikal termasuk mematuhi peraturan, menepati masa,menunaikan janji dan bersifat sabar.'
+      proactive: 11. PROACTIVE and INOVATIVE
+      proactive_desc: 'Kebolehan menjangka kemungkinan,mencipta dan mengeluarkan idea baru serta membuat pembaharuan bagi mempertingkatkan kualiti dan produktiviti organisasi.'
+      relate: 12. JALINAN HUBUNGAN DAN KERJASAMA 
+      relate_desc: 'Kebolehan pegawai dalam mewujudkan suasana kerjasama yang harmoni dan mesra serta boleh menyesuaikan diri dalam semua keadaan.'
+      title_part6: 'Part VI: Marks for Part II'
+      parttwo: 13. KEGIATAN DAN SUMBANGAN DI LUAR TUGAS RASMI 
+      parttwo_desc: 'Berasaskan maklumat di Bahagian II perenggan 1,Pegawai Penilai dikehendaki memberi penilaian dengan menggunakan skala 1 hingga 10. Tiada sebarang markah boleh diberikan (kosong) jika PYD tidak mencatat kegiatan atau sumbangannya.'
+      
+      title_part8: 'Part VIII: Summary and Authentication by First Evaluating Officer (PPP)'
+      part8_desc: 'Duration PYD has served under you'
+      part8i_desc: 'First Evaluating Officer (PPP) should provide a summary of Evaluated Officer (PYD)`s overall performance'
+      part8i: '(i) Overall Performance'
+      part8ii: '(ii) Career Progress'
+      ppp_statement: 'Hereby authenticated that this staff`s performance has been provided to him/her'
+      pppid: 'Name of First Evaluating Officer (PPP)'
+      title_part9: 'Part IX - Summary by Second Evaluating Officer (PPK)'
+      part9_desc: 'PPK should provide an overall performance summary for the PYD bases on the full statement of the PPP'
+      ppkid: 'Name of Second Evaluating Officer (PPK)'
+      title_part10: 'Part IV: '
+   
+  student: 
+    icno: MYKad No
+    name: Name
+    matrixno: Matrix No
+    sstatus: Student Status
+    stelno: Telephone No
+    
+    race: Race
+    regdate: Registration Date
+    offer_letter_serial: Offer Letter Reference
+    
+  book: 
+    tagno: Tag No
+    title: Title
+    language: Language
+    author: Author
+    subject: Subject
+    publisher: Publisher
+    publish_date: Publish Date
+    publish_location: Publish Location
+    links: Links/URL
+    quantity: Quantity
+      
+  librarytransaction:
+    list: Library Transaction List
+    book_id: Book ID
+    borrower: Borrowed By
+    checkoutdate: Checked Out
+    studentname: Borrowed By
+    duedate: Due Date
+    extend: Extend
+    extended: Returned
+    returneddate: Returned On
+    newrec: Create New Transaction
+    edit: Edit Library Transaction
+    details: Loaned Book Details
+    loanedtotype: Member is Staff?
+    fine: Denda Perlu Dibayar
+    finepay: Fine Paid?
+    finepaydate: Fine Paid Date
+    lost: Lost?
+    reportdetails: Report Details
+    reportlostdate: Report Lost Date
+    replaceddate: Replaced Date
+    report: Report Lost
+
+  asset:
+    new: New Asset
+    list: Inventory
+    create: Create New Asset
+    assettype: Asset Type
+    assetcode: Registration Serial No
+    cardno: Card No
+    name: Name
+    category: Category
+    purchasedate: Purchase Date
+    purchaseprice: Purchase Price
+    
+      
+  date:
+    formats:
+    # Use the strftime parameters for formats.
+    # When no format has been given, it uses default.
+    # You can provide other formats here if you like!
+    default: "%d-%m-%Y"
+    short: "%b %d"
+    long: "%B %d, %Y"
+
+    day_names: [Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday]
+    abbr_day_names: [Sun, Mon, Tue, Wed, Thu, Fri, Sat]
+
+    # Don't forget the nil at the beginning; there's no such thing as a 0th month
+    month_names: [~, January, February, March, April, May, June, July, August, September, October, November, December]
+    abbr_month_names: [~, Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec]
+    # Used in date_select and datime_select.
+    order: [ :day, :month, :year ]
+
